@@ -10,10 +10,12 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import {FormsModule} from "@angular/forms";
 import { TaskItemComponent } from './components/tasks/task-item/task-item.component';
 import {RouterModule, Routes} from "@angular/router";
+import { AboutComponent } from './about/about.component';
 
 const appRoutes:Routes=[
   {path:"",component:TasksComponent},
   {path:"new", component:AddTaskComponent},
+  {path:"about", component:AboutComponent},
   {path:"edit/:id", component:EditTaskComponent}
   ]
 @NgModule({
@@ -24,7 +26,8 @@ const appRoutes:Routes=[
     TaskDetailsComponent,
     EditTaskComponent,
     NavigationComponent,
-    TaskItemComponent
+    TaskItemComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
